@@ -15,6 +15,8 @@ Taller Aspectos
 ![WhatsApp Image 2021-06-16 at 16 27 00 (1)](https://user-images.githubusercontent.com/76632790/122296217-c5f25300-cebf-11eb-90ea-8b415047038c.jpeg)
 ![WhatsApp Image 2021-06-16 at 16 27 00](https://user-images.githubusercontent.com/76632790/122296231-ca1e7080-cebf-11eb-9a58-9d71580a5362.jpeg)
 ![WhatsApp Image 2021-06-16 at 16 26 59](https://user-images.githubusercontent.com/76632790/122296243-cd196100-cebf-11eb-81ee-e813d63bda1f.jpeg)
+![parte 4](https://user-images.githubusercontent.com/85047464/122300419-e7a20900-cec4-11eb-9168-14e9b64e77a7.jpg)
+
 
 #ALEJANDRA QUIMI
 ![WhatsApp Image 2021-06-16 at 17 00 05 (2)](https://user-images.githubusercontent.com/76632790/122300058-6ba7c100-cec4-11eb-8833-bd123fb59281.jpeg)
