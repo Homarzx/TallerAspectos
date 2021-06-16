@@ -10,16 +10,15 @@ public aspect Logger {
 	    //Aspecto ejemplo: solo muestra este mensaje después de haber creado un usuario 
 	    	System.out.println("**** User created ****");
 	    }
-	    
-	    //File file = new File("log.txt");
-	    //FileWriter w=new FileWriter("log.txt");    		
-	    BufferedWriter bw = new BufferedWriter(new FileWriter("log.txt"));
+	   
+	    BufferedWriter bw;
 	    Calendar cal = Calendar.getInstance();
 	    //Aspecto: Deben hacer los puntos de cortes (pointcut) para crear un log con los tipos de transacciones realizadas.
 	    pointcut success2() : call(* moneyMakeTransaction(..) );
 	    after() : success2() {
 	    	System.out.println("Realiza transaccion"+" "+cal.getTime());
 	    	try {
+	    		bw = new BufferedWriter(new FileWriter("log.txt"));
 				bw.write("Realiza transaccion"+" "+cal.getTime());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
