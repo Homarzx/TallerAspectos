@@ -15,14 +15,16 @@ public aspect Logger {
 	    File file = new File("log.txt");
 	    Calendar cal = Calendar.getInstance();
 	   
-	    BufferedWriter bw;
+	    FileWriter bw;
 	    //Aspecto: Deben hacer los puntos de cortes (pointcut) para crear un log con los tipos de transacciones realizadas.
 	    pointcut success2() : call(* moneyMakeTransaction(..) );
 	    after() : success2() {
-	    	System.out.println("Realiza transaccion"+" "+cal.getTime());
+	    	System.out.println("Realiza transaccion"+" "+cal.getTime()+"  ");
 	    	try {
-	    		bw = new BufferedWriter(new FileWriter("log.txt"));
-				bw.write("Realiza transaccion"+" "+cal.getTime());
+	    		bw = new FileWriter(file,true);
+				bw.write("Realiza transaccion"+" "+cal.getTime()+"  ");
+		    	bw.close();
+	    		
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -34,14 +36,15 @@ public aspect Logger {
 	    after() : retirar() {
 	    	String st = "Retira dinero: "+cal.getTime();
 	    	System.out.println(st);
-	    	FileWriter fw;
+	    	FileWriter fw2;
 			try {
-				fw = new FileWriter("log.txt");
-				fw.write(st + "\n");
-		    	fw.close();
+				fw2 = new FileWriter(file,true);
+				fw2.write("Retira dinero: "+cal.getTime()+"  ");
+		    	fw2.close();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	    }
+	    
 }
