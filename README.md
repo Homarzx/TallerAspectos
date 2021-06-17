@@ -24,4 +24,4 @@ Taller Aspectos
 ![WhatsApp Image 2021-06-16 at 17 00 05](https://user-images.githubusercontent.com/76632790/122300079-72cecf00-cec4-11eb-9f2f-0c375cf0c441.jpeg)
 
 #HOMAR HERRERA
-https://imgur.com/a/FjFlmXi/
+![diseno](https://user-images.githubusercontent.com/29640147/122325677-a3c4f900-cef0-11eb-8388-ceb051622852.png)
